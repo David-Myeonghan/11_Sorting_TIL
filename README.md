@@ -7,7 +7,17 @@
     - Sort it to make it meaningful to access easily.
     - Something wrong, or in a inefficient way means losing money.
 
+    - "https://www.toptal.com/developers/sorting-algorithms"
+
+    - Elemantory Sorts: Bubble Sort, Insertion Sort, Selection Sort.
+
 ## Bubble Sort
+
+    - Bubble up the highest number, and go to the begining and bubble up again til it's sorted.
+    - One of the simplest sorting algorithm but also one of the least efficient.
+    - Comparing items in nested loops one by one.
+    - Time complexity: O(n^2)
+    - Space complexity: O(1)
 
 ## Insertion Sort
 
