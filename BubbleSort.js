@@ -16,7 +16,7 @@ function bubbleSort(array) {
 		}
 	}
 
-	// What a shame!!!!!!!! It's a Bummer!
+	// What a shame!!!!!!!! What a Bummer!
 
 	// for (let i = 0; i < array.length; i++) {
 	// 	for (let j = i + 1; j < array.length; j++) {

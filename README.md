@@ -23,6 +23,11 @@
 
 ## Selection Sort
 
+    - This works by scanning a list of items for the smallest element and then swapping that element for the one in the first position.
+
+    - Time Complexity: O(n^2)
+    - Space Complexity: O(1)
+
 ## Merge Sort
 
 ## Quick Sort
