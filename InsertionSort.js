@@ -10,7 +10,7 @@ function insertionSort(array) {
 				let temp = array[i];
 				array[i] = array[i + 1];
 				array[i + 1] = temp;
-				if (array[j - 1] !== undefined && array[j - 1] > array[j]) {
+				if (j > -1 && array[j - 1] > array[j]) {
 					// Swap
 					let temp2 = array[j - 1];
 					array[j - 1] = array[j];
@@ -42,5 +42,25 @@ function insertionSortSolution(array) {
 	}
 }
 
-insertionSortSolution(numbers);
+function insertionSortSolution2(array) {
+	// copy array
+	let result = [...array];
+	let length = array.length; // 정렬된 부분의 현재 인덱스
+
+	for (let i = 1; i < length; i++) {
+		let current = array[i];
+		let left = i - 1;
+
+		while (left >= 0 && array[left] > current) {
+			array[left + 1] = array[left];
+			left--;
+		}
+
+		// 임시로 저장한 현재값을 정렬된 부분의 인덱스에 부여
+		array[left + 1] = current;
+	}
+	return result;
+}
+
+insertionSortSolution2(numbers);
 console.log(numbers);

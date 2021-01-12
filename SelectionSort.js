@@ -35,5 +35,7 @@ function selectionSortSolution(array) {
 	}
 	return array;
 }
+// useful for nearly sorted data.
+
 selectionSort(numbers);
 console.log(numbers);
