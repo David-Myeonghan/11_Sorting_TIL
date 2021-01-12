@@ -32,6 +32,7 @@ function bubbleSort(array) {
 	// }
 }
 
+// the Highest numbers goes to the right most side of the array.
 function bubbleSortSolution(array) {
 	const length = array.length;
 

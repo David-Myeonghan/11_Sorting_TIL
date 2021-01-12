@@ -19,14 +19,18 @@
     - Time complexity: O(n^2)
     - Space complexity: O(1)
 
-## Insertion Sort
-
 ## Selection Sort
 
     - This works by scanning a list of items for the smallest element and then swapping that element for the one in the first position.
 
     - Time Complexity: O(n^2)
     - Space Complexity: O(1)
+
+## Insertion Sort
+
+    - Not efficient either but extremely fast in some cases.
+    - Useful for times when you're pretty sure thier list is almost sorted.
+    - Performs really well when it comes to small data sets.
 
 ## Merge Sort
 
