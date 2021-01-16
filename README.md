@@ -9,7 +9,7 @@
 
     - "https://www.toptal.com/developers/sorting-algorithms"
 
-    - Elemantory Sorts: Bubble Sort, Insertion Sort, Selection Sort.
+    **- Elemantory Sorts: Bubble Sort, Insertion Sort, Selection Sort.**
 
 ## Bubble Sort
 
@@ -31,7 +31,22 @@
     - Not efficient either but extremely fast in some cases.
     - Useful for times when you're pretty sure thier list is almost sorted.
     - Performs really well when it comes to small data sets.
+    - Time Complexity: O(n^2)
+    - Space Complexity: O(1)
 
 ## Merge Sort
 
+    - Divider & Conquer => usually O(n log n)
+    - Take the list and divide it in half.
+    - and then each of subsets into half again, again until have one item.
+    - Compare first item and second item.
+    - kinda reversed tree. from leaf to root.
+    - using recursion.
+
+    -helpful it's stable: if the same element, keep the original order in the array.
+    - Time Complexity: O(n log(n))
+    - Space Complexity: **O(n)**  --> one downside of Merge sort.
+
 ## Quick Sort
+
+    - Divider & Conquer

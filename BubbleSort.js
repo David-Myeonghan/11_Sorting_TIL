@@ -38,6 +38,7 @@ function bubbleSortSolution(array) {
 
 	for (let i = 0; i < length; i++) {
 		for (let j = 0; j < length; j++) {
+			// comparing "number" with "undefined" always return "false".
 			if (array[j] > array[j + 1]) {
 				// Swap
 				let temp = array[j];
