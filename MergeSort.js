@@ -5,12 +5,16 @@ function mergeSort(array) {
 		return array;
 	}
 	// Split Array in into right and left
-	const middle = Math.floor(array.length / 2);
+	const length = array.length;
+	const middle = Math.floor(length / 2);
 	let left = array.slice(0, middle);
 	let right = array.slice(middle);
 	// array.slice(length) => [] empty array, Not undefiend!
 
-	return merge(mergeSort(left), mergeSort(right));
+	console.log("left:", left);
+	console.log("right:", right);
+
+	return merge(mergeSort(left), mergeSort(right)); // Divide
 }
 
 function merge(left, right) {
@@ -28,7 +32,7 @@ function merge(left, right) {
 		}
 	}
 
-	// without slice(), returns undefined.
+	// without slice(), returns undefined. and then retuns [1,2,3,... undefined]
 	return resultArray.concat(left.slice(leftIndex), right.slice(rightIndex));
 }
 

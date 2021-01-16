@@ -46,7 +46,12 @@
     -helpful it's stable: if the same element, keep the original order in the array.
     - Time Complexity: O(n log(n))
     - Space Complexity: **O(n)**  --> one downside of Merge sort.
+    - one of efficient sorting algorithms.
 
 ## Quick Sort
 
     - Divider & Conquer
+
+## Stability in sorting algorithms
+
+    - "https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important"
