@@ -158,3 +158,10 @@
 
     #8 - You want to teach sorting for the first time
         :Bubble Sort, Selection Sort
+
+## ECMAScript in JavaScript does not mention how .sort() should be implemented.
+
+    - Depends on browers
+
+    - Chrom V8: Quick, Insertion Sort.
+    - Mozilla: Merge Sort
