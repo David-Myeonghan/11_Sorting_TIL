@@ -51,6 +51,29 @@
 ## Quick Sort
 
     - Divider & Conquer
+    - So, O(n log(n))
+    - Use a pivoting technique: break the main list into smaller lists.
+    - and Smaller lists use the pivoting technique until they are sorted.
+
+    - Select a pivot randomly.
+    - a smaller number than pivot should be leftside of pivot, a bigger should be its rightside.
+    - After the first iteration, at least we know where the privot should be.
+    - the left/right side list of the pivot should be sorted again.
+
+    - How de we even pick the pivot point?
+    - Depends on the situation. But happen to pickthe pivot point as always the last item in the array.
+
+    - How do we code?
+    - ...
+
+    - Useful
+
+    - Space Complexity: O(log(n)), which is really good
+    - Time Complexity: O(n^2)), when the pivot is smallest, or biggest item in the list, so not splitting the list in half.
+    - Picking a good pivot is important.
+
+    - Usually the fastest on average but pretty nasty worst case behaviours.
+    - If you can't guarantee a good pivot, avoid Quick sort.
 
 ## Stability in sorting algorithms
 
