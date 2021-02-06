@@ -78,3 +78,83 @@
 ## Stability in sorting algorithms
 
     - "https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important"
+
+## Which sort is the best?
+
+### Insertion Sort
+
+    - Should be used with only a few items.
+    - When input is small, or items are mostly sorted, it is fast
+
+### Bubble Sort
+
+    - Never gonna use Bubble Sort in real.
+    - Used for educational purposes.
+    - Not very efficient.
+
+### Selection Sort
+
+    - Never gonna use Selection Sort in real life.
+
+### Merge Sort
+
+    - Divide and Conquer, so it is fast.
+    - Best and Wort case is the same O(n log(n)).
+    - If you're worring about the Worst case, use this.
+    - But Space complexity is very expensive. O(n)
+
+### Quick Sort
+
+    - Better than Merge Sort in Space Complexity and average case.
+    - But one downside is the Worst case, if you don't pick a pivot properly.
+
+### Heap Sort
+
+    - Usually slower
+    - You might use it if you're worrying about Worst case and space complexity.
+    - "https://stackoverflow.com/questions/2467751/quicksort-vs-heapsort"
+
+## Non-Comparison Sort
+
+    - It is impossible to beat O(n log n) mathematically.
+    - You can improve this if you don't make comparisons.
+
+    - Counting Sort
+    - Radix Sort
+
+    - Only worked with numbers, specifically integers, in a restiricted range.
+    - Using the way numbers are stored on memory.
+
+    - "https://brilliant.org/wiki/radix-sort/"
+    - "https://www.cs.usfca.edu/~galles/visualization/RadixSort.html"
+
+    - "https://brilliant.org/wiki/counting-sort/"
+    - "https://www.cs.usfca.edu/~galles/visualization/CountingSort.html"
+
+## Sorting Interview
+
+    #1 - Sort 10 schools around your house by distance
+        :Insertion Sort, small inputs, easy to code
+
+    #2 - eBay sorts listing by the current Bid amount
+        :Radix or Counting Sort, as amount are numbers, knowing that bids are always going to be number withn a certain range.
+
+    #3 - Sport scores on ESPN
+        : Quick Sort, as diffrernt formats on varios sports
+
+    #4 - Massive database (can't fit all into memory) needs to sort through past year's user data
+        :Merge Sort, as might sort out externally, tons of data worring about the performance.
+
+    #5 - Almost sorted Udemy review data needs to update and add 2 new reviews
+        :Insersion Sort, as already presorted
+
+    #6 - Temperature Records for the past 50 years in Canada
+        :Radix, Couting Sort if there is no decimal places.
+        : Quick Sort space complexity with decimal places
+
+    #7 - Large username database needs to be sorted. Data is very random.
+        : Merge Sort if we have enough memory, and not expensive
+        : Quick Sort if not worried about worst case, and not that large
+
+    #8 - You want to teach sorting for the first time
+        :Bubble Sort, Selection Sort
